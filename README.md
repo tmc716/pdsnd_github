@@ -4,7 +4,7 @@
 Bikeshare Data
 
 ### Description
-Interactive environment for looking at statistics of bikeshare usage data from 3 cities.
+Interactive environment for looking at statistics of bikeshare usage data from Chicago, New York City, and Washington. User can narrow down data by city, month, and/or day of the week.
 
 ### Files used
 bikeshare_2.py
