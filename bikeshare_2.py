@@ -104,14 +104,14 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print("Most common start station: ", df['Start Station'].mode()[0])
+    print("Most popular start station: ", df['Start Station'].mode()[0])
 
     # TO DO: display most commonly used end station
-    print("Most common end station: ", df['End Station'].mode()[0])
+    print("Most popular end station: ", df['End Station'].mode()[0])
 
     # TO DO: display most frequent combination of start station and end station trip
     df['Trip']=df['Start Station'] + " to " + df['End Station']
-    print("Most frequent combination of start and end station: ", df['Trip'].mode()[0])
+    print("Most popular combination of start and end station: ", df['Trip'].mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -156,7 +156,7 @@ def user_stats(df):
         print("Most recent year of birth: ", int(df['Birth Year'].max()))
         print("Most common year of birth: ", int(df['Birth Year'].mode()))
     else:
-        print("Birth year data is not available for this city")
+        print("This city believes that gender is a social construct")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
