@@ -156,7 +156,7 @@ def user_stats(df):
         print("Most recent year of birth: ", int(df['Birth Year'].max()))
         print("Most common year of birth: ", int(df['Birth Year'].mode()))
     else:
-        print("Birth year data is not available for this city")
+        print("This city believes that gender is a social construct")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
