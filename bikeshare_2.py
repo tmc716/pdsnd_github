@@ -16,7 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). Reject and ask again if city name is invalid.
 
     city=input("\nWhich city would you like data for: Chicago, new york city, or washington?\n").lower()
     while city not in ['chicago', 'new york city', 'washington']:
@@ -24,14 +24,14 @@ def get_filters():
         city=input("\nWhich city would you like data for: Chicago, new york city, or washington?\n").lower()
 
 
-    # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june). Reject and ask again if month is invalid.
     month=input("\nWhich month would you like data for: all, january, february, march, april, may, or june\n").lower()
     while month not in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
         print('That\'s not a valid month')
         month=input("\nWhich month would you like data for: all, january, february, march, april, may, or june\n").lower()
 
 
-        # get user input for day of week (all, monday, tuesday, ... sunday)
+        # get user input for day of week (all, monday, tuesday, ... sunday). Reject and ask again if day is invalid.
     day=input("\nWhich day would you like data for: all, monday, tuesday, ...sunday\n").title()
     while day not in ['All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
             print('That\'s not a valid day')
@@ -83,13 +83,13 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    # Display the most common month
     print("Most common month: ", df['month'].mode()[0])
 
-    # TO DO: display the most common day of week
+    # Display the most common day of week
     print("Most common day of the week: ", df['day_of_week'].mode()[0])
 
-    # TO DO: display the most common start hour
+    # Display the most common start hour
     df['hour']=df['Start Time'].dt.hour
     print("Most common start hour: ", df['hour'].mode()[0])
 
