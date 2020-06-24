@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
-
+06.23.2020
 ### Project Title
-Replace the Project Title
+Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+Interactive environment for looking at statistics of bikeshare usage data from Chicago, New York City, and Washington. User can narrow down data by city, month, and/or day of the week.
 
 ### Files used
-Include the files used
+bikeshare_2.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity Programming for Data Science with Python Nanodegree Program
